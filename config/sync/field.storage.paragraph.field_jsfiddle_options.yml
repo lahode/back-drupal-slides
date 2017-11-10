@@ -1,0 +1,33 @@
+uuid: d8ff4b1d-9a9f-4b50-a86e-d487d7ad64ce
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_jsfiddle_options
+field_name: field_jsfiddle_options
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: js
+      label: JS
+    -
+      value: html
+      label: HTML
+    -
+      value: css
+      label: CSS
+    -
+      value: result
+      label: Résultat
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

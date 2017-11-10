@@ -1,0 +1,30 @@
+uuid: db586a47-5ef8-4851-a937-ab62ccab1eec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list.field_list_item
+    - field.field.paragraph.list.field_list_title
+    - paragraphs.paragraphs_type.list
+id: paragraph.list.default
+targetEntityType: paragraph
+bundle: list
+mode: default
+content:
+  field_list_item:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_list_title:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

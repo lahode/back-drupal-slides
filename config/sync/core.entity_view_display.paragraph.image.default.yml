@@ -1,0 +1,33 @@
+uuid: dba05d44-5ebe-4081-bf85-f559d54abb89
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.image.field_image_image
+    - field.field.paragraph.image.field_image_size
+    - paragraphs.paragraphs_type.image
+  module:
+    - image
+    - options
+id: paragraph.image.default
+targetEntityType: paragraph
+bundle: image
+mode: default
+content:
+  field_image_image:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_image_size:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

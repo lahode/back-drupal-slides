@@ -1,0 +1,11 @@
+slide_custom.getslides:
+  path: 'slides/{book}'
+  defaults: { _controller: '\Drupal\slide_custom\Controller\SlideController::render' }
+  methods:  [GET]
+  options:
+    parameters:
+      book:
+        type: entity:node
+  requirements:
+    # Access should be public to allow JS to get information
+    _access: 'TRUE'

@@ -1,0 +1,33 @@
+uuid: 66a73563-b2bd-4788-8170-62ebdbb1a793
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list.field_list_item
+    - field.field.paragraph.list.field_list_title
+    - paragraphs.paragraphs_type.list
+id: paragraph.list.default
+targetEntityType: paragraph
+bundle: list
+mode: default
+content:
+  field_list_item:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_list_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

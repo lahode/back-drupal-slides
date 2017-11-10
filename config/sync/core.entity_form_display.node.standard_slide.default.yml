@@ -1,0 +1,47 @@
+uuid: 26a8d973-23d4-4b1a-9e7c-7038e559280e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.standard_slide.field_slide_component
+    - node.type.standard_slide
+  module:
+    - paragraphs
+id: node.standard_slide.default
+targetEntityType: node
+bundle: standard_slide
+mode: default
+content:
+  field_slide_component:
+    type: entity_reference_paragraphs
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

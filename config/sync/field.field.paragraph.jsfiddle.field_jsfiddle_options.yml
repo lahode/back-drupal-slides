@@ -1,0 +1,21 @@
+uuid: ba359251-6ca8-465f-9821-96cf3e654f62
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jsfiddle_options
+    - paragraphs.paragraphs_type.jsfiddle
+  module:
+    - options
+id: paragraph.jsfiddle.field_jsfiddle_options
+field_name: field_jsfiddle_options
+entity_type: paragraph
+bundle: jsfiddle
+label: Options
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

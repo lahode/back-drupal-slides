@@ -1,0 +1,27 @@
+uuid: 4b6beb48-f83e-462a-993f-97cdcb38c5dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_image_size
+field_name: field_image_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: full
+      label: 'Plein écran'
+    -
+      value: half
+      label: 'Moitié de l''écran'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

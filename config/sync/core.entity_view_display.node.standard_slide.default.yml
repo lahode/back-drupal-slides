@@ -1,0 +1,28 @@
+uuid: b09e851a-e1bc-4a9f-b30f-2bcb7153be33
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.standard_slide.field_slide_component
+    - node.type.standard_slide
+  module:
+    - entity_reference_revisions
+    - user
+id: node.standard_slide.default
+targetEntityType: node
+bundle: standard_slide
+mode: default
+content:
+  field_slide_component:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

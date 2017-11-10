@@ -1,0 +1,42 @@
+uuid: db5e5a10-552b-4883-afbd-7ed65c09e0c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.jsfiddle.field_jsfiddle_link
+    - field.field.paragraph.jsfiddle.field_jsfiddle_options
+    - field.field.paragraph.jsfiddle.field_jsfiddle_titre
+    - paragraphs.paragraphs_type.jsfiddle
+  module:
+    - link
+id: paragraph.jsfiddle.default
+targetEntityType: paragraph
+bundle: jsfiddle
+mode: default
+content:
+  field_jsfiddle_link:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_jsfiddle_options:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_jsfiddle_titre:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

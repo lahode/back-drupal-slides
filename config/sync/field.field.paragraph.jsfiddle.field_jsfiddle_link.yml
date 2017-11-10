@@ -1,0 +1,23 @@
+uuid: 74008997-daa5-4c46-9bb5-b9abb6e829cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_jsfiddle_link
+    - paragraphs.paragraphs_type.jsfiddle
+  module:
+    - link
+id: paragraph.jsfiddle.field_jsfiddle_link
+field_name: field_jsfiddle_link
+entity_type: paragraph
+bundle: jsfiddle
+label: Lien
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

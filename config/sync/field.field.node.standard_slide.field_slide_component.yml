@@ -1,0 +1,56 @@
+uuid: d55be6aa-4d29-4288-b77b-1260967122bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slide_component
+    - node.type.standard_slide
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.image_text
+    - paragraphs.paragraphs_type.jsfiddle
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.list
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.standard_slide.field_slide_component
+field_name: field_slide_component
+entity_type: node
+bundle: standard_slide
+label: Component
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      image_text: image_text
+      image: image
+      list: list
+      text: text
+      jsfiddle: jsfiddle
+      link: link
+    target_bundles_drag_drop:
+      image_text:
+        enabled: true
+        weight: 2
+      image:
+        enabled: true
+        weight: 5
+      list:
+        enabled: true
+        weight: 5
+      text:
+        enabled: true
+        weight: 6
+      jsfiddle:
+        enabled: true
+        weight: 8
+      link:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

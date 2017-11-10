@@ -1,0 +1,10 @@
+uuid: 563048e3-02b4-4e08-b41b-3d8f91de2706
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.restapi
+label: RestAPI
+targetEntityType: paragraph
+cache: true
