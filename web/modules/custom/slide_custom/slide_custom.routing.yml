@@ -9,3 +9,11 @@ slide_custom.getslides:
   requirements:
     # Access should be public to allow JS to get information
     _access: 'TRUE'
+
+slide_custom.getslideshow:
+  path: 'slideshow'
+  defaults: { _controller: '\Drupal\slide_custom\Controller\SlideshowController::render' }
+  methods:  [GET]
+  requirements:
+    # Access should be public to allow JS to get information
+    _access: 'TRUE'

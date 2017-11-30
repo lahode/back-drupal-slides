@@ -80,7 +80,8 @@ class SlideController extends ControllerBase {
       // Get all the slides nids
       $query = $this->database->select('book', 'b');
       $query->fields('b', array('nid'));
-      $query->condition('pid', 1);
+      $query->condition('pid', $node->id());
+      $query->orderby('weight', 'ASC');
       $nids = $query->execute()->fetchCol(0);
       if (!empty($nids)) {
 
