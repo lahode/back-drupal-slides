@@ -12,11 +12,11 @@ type: list_string
 settings:
   allowed_values:
     -
-      value: js
-      label: JS
-    -
       value: html
       label: HTML
+    -
+      value: js
+      label: JS
     -
       value: css
       label: CSS

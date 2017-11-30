@@ -4,8 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.book.body
+    - field.field.node.book.field_logo
+    - image.style.thumbnail
     - node.type.book
   module:
+    - image
     - text
 _core:
   default_config_hash: H1OKi53WidZbjVbzIreUknr_87Ln_lveBQ1RojZKUQA
@@ -23,6 +26,14 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
+  field_logo:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   status:
     type: boolean_checkbox
     settings:

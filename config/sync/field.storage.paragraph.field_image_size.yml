@@ -17,6 +17,9 @@ settings:
     -
       value: half
       label: 'Moitié de l''écran'
+    -
+      value: right
+      label: Droite
   allowed_values_function: ''
 module: options
 locked: false
